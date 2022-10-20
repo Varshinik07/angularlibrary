@@ -19,6 +19,10 @@ export class ApiService {
     return this.http.post("http://localhost:8080/deletebook",data)
   }
 
+  searchbook=(data:any)=>{
+    return this.http.post("http://localhost:8080/searchbook",data)
+  }
+
   ngOnInit(): void {
   }
 }
