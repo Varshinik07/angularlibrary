@@ -17,6 +17,7 @@ export class ViewbookComponent implements OnInit {
         this.viewbook=data
       }
     )
+    
    }
  viewbook:any=[]
   ngOnInit(): void {
