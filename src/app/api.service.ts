@@ -22,6 +22,9 @@ export class ApiService {
   searchbook=(data:any)=>{
     return this.http.post("http://localhost:8080/searchbook",data)
   }
+  updatebook=(data:any)=>{
+    return this.http.post("http://localhost:8080/editbook",data)
+  }
 
   ngOnInit(): void {
   }

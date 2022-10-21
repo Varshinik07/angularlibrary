@@ -19,6 +19,16 @@ export class ViewbookComponent implements OnInit {
     )
     
    }
+   deletebook=(id:any)=>{
+    let data={
+      "id":id
+    }
+    this.myapi.deleteBook(data).subscribe(
+      (response)=>{
+        alert("deleted successfully")
+      }
+    )
+   }
  viewbook:any=[]
   ngOnInit(): void {
   }
