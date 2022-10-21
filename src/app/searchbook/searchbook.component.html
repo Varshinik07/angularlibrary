@@ -12,16 +12,20 @@
                 <div *ngFor="let i of data">
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">Book Name</label>
-                        <input type="text" class="form-control" value="{{i.bookname}}">
+                        <input type="text" class="form-control" value="{{i.bookname}}"[(ngModel)]="i.bookname">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">Author Name</label>
-                        <input type="text" class="form-control" value="{{i.authorname}}">
+                        <input type="text" class="form-control" value="{{i.authorname}}"[(ngModel)]="i.authorname">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">Description</label>
-                        <input type="text" class="form-control" value="{{i.description}}">
+                        <input type="text" class="form-control" value="{{i.description}}"[(ngModel)]="i.description">
                     </div>
+                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success" (click)="updatebook()">Update</button>
+                 </div>
+
                 </div>
                     
                 </div>

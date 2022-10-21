@@ -23,6 +23,13 @@ export class SearchbookComponent implements OnInit {
       }
     )
   }
+  updatebook=()=>{
+    this.myapi.updatebook(this.data[0]).subscribe(
+      (response)=>{
+        alert("updated successfully")
+      }
+    )
+  }
 
    data:any=[]
   ngOnInit(): void {
